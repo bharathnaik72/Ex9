@@ -22,8 +22,8 @@ src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type=
             Password<span style="color: red;">*</span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type='password' name="mypassword" ng- model="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-            <span style="color: red;" ng-show="myform.mypassword.$error required">Password is required</span>
+            <input type='password' name="mypassword" ng- model="password".required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <span style="color: red;" ng-show="myform.mypassword.$error.required">Password is required</span>
             <span style="color: red;" ng-show="myform.mypassword.$error.pattern">Password is invalid</span>
             <br>
             <br>
@@ -59,7 +59,7 @@ Gender<span style="color: red;">*</span>
 &nbsp;
 <input type='radio' name="mygender" ng-model="Gender" value="Male"required>
 Male<input type='radio' name="mygender" ng-model="Gender"value="Female".required>Female
-<span style="color: red;" ng-show="myform.mygender.$error required">Gender is required</span>
+<span style="color: red;" ng-show="myform.mygender.$error.required">Gender is required</span>
 <br>
 <br>
 State<span style="color: red;">*</span>
@@ -71,7 +71,7 @@ State<span style="color: red;">*</span>
 <option value="Kerala">Kerala</option>
 <option value="Karnataka">Karnataka</option>
 </select>
-<span style="color: red;" ng-show="myform.mystate.$error required">State required</span>
+<span style="color: red;" ng-show="myform.mystate.$error.required">State required</span>
 <br>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
